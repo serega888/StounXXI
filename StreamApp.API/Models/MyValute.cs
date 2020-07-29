@@ -8,6 +8,7 @@ namespace StreamApp.API.Models
         public int KursValuteId { get; set; }
         public string MyValuteId {get;set;}
         public string Name {get;set;}
+        public string ValueKurs {get;set;}
         public KursValute KursValute { get; set; }   
         
     }

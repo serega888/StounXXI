@@ -8,7 +8,7 @@ namespace StreamApp.API.Models
         public int Id {get;set;}
         public DateTime DateKurs {get;set;}
         public string Name {get; set;}
-        public List<MyValute> MyValutes {get;set;}
+        public virtual ICollection<MyValute> MyValutes {get;set;}
         
     }
 }

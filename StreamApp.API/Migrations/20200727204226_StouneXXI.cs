@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace StreamApp.API.Migrations
 {
-    public partial class CreateStouneDB : Migration
+    public partial class StouneXXI : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -29,7 +29,8 @@ namespace StreamApp.API.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     KursValuteId = table.Column<int>(nullable: false),
                     MyValuteId = table.Column<string>(nullable: true),
-                    Name = table.Column<string>(nullable: true)
+                    Name = table.Column<string>(nullable: true),
+                    ValueKurs = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

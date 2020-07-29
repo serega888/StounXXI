@@ -10,8 +10,8 @@ using StreamApp.API.Data;
 namespace StreamApp.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20200725221253_CreateStouneDB")]
-    partial class CreateStouneDB
+    [Migration("20200727204226_StouneXXI")]
+    partial class StouneXXI
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -53,6 +53,9 @@ namespace StreamApp.API.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ValueKurs")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
